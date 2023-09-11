@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int prato, sobremesa, bebida;
+    double Calorias = 0.0;    
+    double prato1 = {180, 230, 250, 359};
+    double sobremesa2 = {75, 110, 170, 200};
+    double bebida3 = {20, 70, 100, 65};
+
+    printf("Escolha o prato");
+    scanf("%d", &prato);
+
+    printf("Escolha a sobremesa");
+    scanf("%d", &sobremesa);
+
+    printf("Escolha a bebida");
+    scanf("%d", &bebida);
+
+
+    Calorias = prato1[prato - 1] + sobremesa2[sobremesa - 1] + bebida3[bebida - 1];
+
+    printf("Total de calorias da refeicao: %.2lf\n", Calorias);
+
+    return 0;
+}
