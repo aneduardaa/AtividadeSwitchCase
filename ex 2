@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<math.h>
+
+main(){
+    int pedido, quantidade;
+    double valor, resultado;
+
+printf("escolha seu pedido\n");
+scanf("%d", &pedido);
+
+switch (pedido){
+    case 100:
+    valor = 10.10;
+    printf("cachorro quente\n");
+    break;
+    case 101:
+    valor = 08.30;
+    printf("Bauru simples\n");
+    break;
+    case 102:
+    valor = 08.50;
+    printf("bauru com ovo\n");
+    break;
+    case 103:
+    valor = 12.50;
+    printf("hamburguer\n");
+    break;
+    case 104:
+    valor = 13.25;
+    printf("cheeseburguer\n");
+    break;
+}
+printf("quantidade\n");
+scanf("%d", &quantidade);
+
+
+resultado = valor * quantidade;
+    printf("O valor do seu pedido e:%.2lf", resultado);
+
+}
